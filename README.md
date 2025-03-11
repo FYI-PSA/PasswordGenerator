@@ -13,3 +13,5 @@ Password contains:
   - all letters of alphabet (lowercase as well as uppercase)
   - digits
   - common punctuation marks and symbols (such as $ ! # / () _-+ )
+
+[The next updates will be in this to-do list](./TODO.md)
