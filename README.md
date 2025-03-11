@@ -12,7 +12,7 @@ Requires the package `pyperclip`.
 Password contains:
   - all letters of alphabet (lowercase as well as uppercase)
   - digits
-  - common punctuation marks and symbols (such as $ ! / | [] {} () _- )
+  - common punctuation marks and symbols (such as $ ! # / () _-+ )
 
 
 Todo next:
