@@ -5,26 +5,29 @@ import sys
 DEFAULT_PASS_LEN = 31
 
 
-def main(N: int) -> str:
-    possible = list(string.ascii_letters)
-    possible.extend(list(string.punctuation))
+def passwordGen(N: int) -> str:
+    possible = []
+    possible.extend(list(string.ascii_lowercase))
+    possible.extend(list(string.ascii_uppercase))
     possible.extend(list(string.digits))
-    gen: random.SystemRandom = random.SystemRandom()
+    possible.extend(list(string.punctuation))
+    OSrand: random.SystemRandom = random.SystemRandom()
     P: str = ""
-    i = 0
+    i: int = 0
     while i < N:
-        P += gen.choice(possible)
+        P += OSrand.choice(possible)
         i += 1
-    pyperclip.copy(P)
     return P
 
 
 if __name__ == '__main__':
-    N = DEFAULT_PASS_LEN
+    N: int = DEFAULT_PASS_LEN
     if len(sys.argv) > 1:
         if sys.argv[1].isdigit():
             N = int(sys.argv[1])
             if N <= 0:
                 N = DEFAULT_PASS_LEN
-    print(main(N))
+    P: str = passwordGen(N)
+    print(P)
+    pyperclip.copy(P)
     exit(0)
