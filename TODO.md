@@ -6,4 +6,4 @@
  - [ ] Add flag to disable uppercase characters
  - [ ] Add flag to disable digits
  - [ ] Add flag to disable lowercase characters
- - [ ] Possible add a system that generates multiple passwords and uses an offline crackable password checker library to make sure it's not by accident crackable
+ - [ ] \(Possibly) add a system that generates multiple passwords and uses a password checker to make sure it's not an easy password by accident
