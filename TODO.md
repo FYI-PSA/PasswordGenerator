@@ -1,4 +1,4 @@
-## Todo next:
+## To do next:
  - [ ] Add a proper flag and paramater checking system
  - [ ] Add flag to disable copying to clipboard
  - [ ] Add flag to disable printing to terminal
