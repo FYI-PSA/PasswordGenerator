@@ -1,4 +1,5 @@
 ## To do next:
+ - [ ] Enable option to run without module `pyperclip`
  - [ ] Add a proper flag and paramater checking system
  - [ ] Add flag to disable copying to clipboard
  - [ ] Add flag to disable printing to terminal
